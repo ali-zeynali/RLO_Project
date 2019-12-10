@@ -60,6 +60,12 @@ public class Course {
         // TODO 1: return grade of student object enrolled in this course,
         // If no such student in this course, return -1
 
+        for (StudentGrade studentGrade: this.studentGrades){
+            if (studentGrade.getStudent() == student){
+                return studentGrade.getGrade();
+            }
+        }
+
         return -1;
     }
 
@@ -68,7 +74,8 @@ public class Course {
         TODO 2: give grade of student having studentID, you can use findStudent method
         If there is no such student, return -1
          */
-        return -1;
+        Student student = this.findStudent(studentID);
+        return this.getStudentGradebyObject(student);
     }
 
     public void updateGrade(int studentID, int newGrade) {
