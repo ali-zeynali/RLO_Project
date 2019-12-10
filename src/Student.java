@@ -43,6 +43,7 @@ class Student {
 
     public void addCourse(Course newCourse) {
         this.takenCourses.add(newCourse);
+        newCourse.addStudent(this);
     }
     public void resetCourses(){
         this.takenCourses = new ArrayList<>();

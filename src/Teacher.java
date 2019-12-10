@@ -40,4 +40,12 @@ public class Teacher {
         this.instructingCourses = new ArrayList<>();
     }
 
+    public void grade(Course course, int studentID, int grade) {
+        for (Course targetCourse : this.instructingCourses) {
+            if (course == targetCourse) {
+                course.updateGrade(studentID, grade);
+            }
+        }
+    }
+
 }

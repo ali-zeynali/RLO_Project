@@ -45,6 +45,7 @@ public class Course {
     public void addStudent(Student newStudent) {
         this.students.add(newStudent);
         StudentGrade studentGrade = new StudentGrade(newStudent, 0);
+        this.studentGrades.add(studentGrade);
     }
 
     public Student findStudent(int studentID) {
@@ -56,7 +57,7 @@ public class Course {
         return null;
     }
 
-    public int getStudentGradebyObject(Student student) {
+    public int getStudentGradeByObject(Student student) {
         // TODO 1: return grade of student object enrolled in this course,
         // If no such student in this course, return -1
 
@@ -75,7 +76,7 @@ public class Course {
         If there is no such student, return -1
          */
         Student student = this.findStudent(studentID);
-        return this.getStudentGradebyObject(student);
+        return this.getStudentGradeByObject(student);
     }
 
     public void updateGrade(int studentID, int newGrade) {
