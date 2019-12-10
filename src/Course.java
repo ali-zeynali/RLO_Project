@@ -70,7 +70,7 @@ public class Course {
         return -1;
     }
 
-    public int getStudentGradebyID(int studentID) {
+    public int getStudentGradeByID(int studentID) {
         /*
         TODO 2: give grade of student having studentID, you can use findStudent method
         If there is no such student, return -1

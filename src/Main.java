@@ -46,7 +46,7 @@ public class Main {
         teacher2.grade(course2, 5, 8);
 
         System.out.println("Student1 grade in course1, using its object:\t" + course1.getStudentGradeByObject(student1));
-        System.out.println("Student5 grade in course2, using its ID:\t" + course2.getStudentGradebyID(5));
+        System.out.println("Student5 grade in course2, using its ID:\t" + course2.getStudentGradeByID(5));
 
         System.out.println("Average grade given by Teacher1:\t" + manager.averageTeacherGrades(teacher1));
         System.out.println("Average grade given by Teacher2:\t" + manager.averageTeacherGrades(teacher2));
