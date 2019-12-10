@@ -41,9 +41,9 @@ public class Main {
         teacher1.grade(course1, 3, 8);
         teacher1.grade(course1, 4, 0);
 
-        teacher2.grade(course2,2,10);
-        teacher2.grade(course2,4, 9);
-        teacher2.grade(course2,5,8);
+        teacher2.grade(course2, 2, 10);
+        teacher2.grade(course2, 4, 9);
+        teacher2.grade(course2, 5, 8);
 
         System.out.println("Student1 grade in course1, using its object:\t" + course1.getStudentGradeByObject(student1));
         System.out.println("Student5 grade in course2, using its ID:\t" + course2.getStudentGradebyID(5));
@@ -53,10 +53,6 @@ public class Main {
 
         System.out.println("Average grade in Course1:\t" + manager.averageCourseGrades(course1));
         System.out.println("Average grade in Course2:\t" + manager.averageCourseGrades(course2));
-
-
-
-
 
     }
 }

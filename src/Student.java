@@ -6,7 +6,7 @@ class Student {
     private int ID;
     private ArrayList<Course> takenCourses;
 
-    public Student(String name, String lastName, int ID){
+    public Student(String name, String lastName, int ID) {
         this.name = name;
         this.lastName = lastName;
         this.ID = ID;
@@ -45,7 +45,8 @@ class Student {
         this.takenCourses.add(newCourse);
         newCourse.addStudent(this);
     }
-    public void resetCourses(){
+
+    public void resetCourses() {
         this.takenCourses = new ArrayList<>();
     }
 }

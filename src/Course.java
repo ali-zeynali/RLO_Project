@@ -61,8 +61,8 @@ public class Course {
         // TODO 1: return grade of student object enrolled in this course,
         // If no such student in this course, return -1
 
-        for (StudentGrade studentGrade: this.studentGrades){
-            if (studentGrade.getStudent() == student){
+        for (StudentGrade studentGrade : this.studentGrades) {
+            if (studentGrade.getStudent() == student) {
                 return studentGrade.getGrade();
             }
         }
