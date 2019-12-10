@@ -3,13 +3,11 @@ import java.util.ArrayList;
 public class Teacher {
     private String name;
     private String lastName;
-    private int ID;
     private ArrayList<Course> instructingCourses;
 
     public Teacher(String name, String lastName, int ID) {
         this.name = name;
         this.lastName = lastName;
-        this.ID = ID;
         this.instructingCourses = new ArrayList<>();
 
     }
@@ -42,11 +40,4 @@ public class Teacher {
         this.instructingCourses = new ArrayList<>();
     }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 }
