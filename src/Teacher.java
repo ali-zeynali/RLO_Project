@@ -5,7 +5,7 @@ public class Teacher {
     private String lastName;
     private ArrayList<Course> instructingCourses;
 
-    public Teacher(String name, String lastName, int ID) {
+    public Teacher(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
         this.instructingCourses = new ArrayList<>();
