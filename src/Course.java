@@ -42,6 +42,10 @@ public class Course {
         return students;
     }
 
+    public ArrayList<StudentGrade> getStudentGrades() {
+        return studentGrades;
+    }
+    
     public void addStudent(Student newStudent) {
         this.students.add(newStudent);
         StudentGrade studentGrade = new StudentGrade(newStudent, 0);
@@ -83,6 +87,14 @@ public class Course {
         /*
         TODO 3: update grade of student having studentID to the newGrade
          */
+        Student student = this.findStudent(studentID)
+        if (!student) {
+            for (StudentGrade studentGrade: this.studentGrades){
+                if (studentGrade.getStudent() == student) {
+                    studentGrade.setGrade(newGrade);
+                }
+            }
+        }
     }
 
 }

@@ -41,15 +41,32 @@ public class Manager {
         /*
         TODO 4: return average grades that this teacher has given
          */
-        return 0;
-
+        double scores = 0.0;
+        int num_students = 0;
+        
+        for (Course course: teacher.getInstructingCourses()) {
+            ArrayList<StudentGrade> studentGrades = course.getStudentGrades();
+            scores += averageCourseGrades(course) * studentGrades.size();
+            num_students += studentGrades.size();
+        }
+        return scores / num_students;
     }
 
     public double averageCourseGrades(Course course) {
         /*
         TODO 5: average students' grade in this course
          */
-        return 0;
+        StduentGrade studentGrades = course.getStudentGrades();
+        if (studentGrades.size() == 0) {
+            return 0;
+        }
+        else {
+            double sum = 0;
+            for (StudentGrade grade: studentGrades) {
+                sum += grade.getGrade();
+            }
+            return sum / studentGrades.size();
+        }
     }
 
 }
