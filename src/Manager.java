@@ -56,7 +56,7 @@ public class Manager {
         /*
         TODO 5: average students' grade in this course
          */
-        StduentGrade studentGrades = course.getStudentGrades();
+        Arraylist<StudentGrade> studentGrades = course.getStudentGrades();
         if (studentGrades.size() == 0) {
             return 0;
         }
